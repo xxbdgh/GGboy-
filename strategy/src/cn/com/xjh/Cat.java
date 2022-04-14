@@ -4,7 +4,7 @@ package cn.com.xjh;
  * @author xujiahui
  * @create 2022/4/14 13:57
  */
-public class Cat implements Comparable {
+public class Cat implements Comparable<Cat> {
     int weight,height;
 
     public Cat(int weight, int height) {
@@ -13,8 +13,7 @@ public class Cat implements Comparable {
     }
 
     @Override
-    public int compareTo(Object c){
-        Cat cat = (Cat)c;
+    public int compareTo(Cat cat){
         if(this.weight>cat.weight){
             return 1;
         }else if(this.weight<cat.weight){

@@ -1,7 +1,6 @@
-package cn.com.xjh;
+package cn.com.xjh.thread.v0427;
 
 import java.lang.reflect.Field;
-import java.util.ArrayList;
 
 /**
  * @author xujiahui
@@ -13,11 +12,11 @@ public class Main {
         //1.通过类名获取类对象
         Class<Demo> clazz1 = Demo.class;
         //2.通过Class.forName(全类名)
-        Class<?> clazz2 = Class.forName("cn.com.xjh.Demo");
+        Class<?> clazz2 = Class.forName("cn.com.xjh.thread.v0427.Demo");
         //3.通过反射机制获取类对象
         Class<?> clazz3 = new Demo().getClass();
         //4.通过类加载器获取类对象
-        Class<?> clazz4 = Demo.class.getClassLoader().loadClass("cn.com.xjh.Demo");
+        Class<?> clazz4 = Demo.class.getClassLoader().loadClass("cn.com.xjh.thread.v0427.Demo");
 
         //获取类的属性
         //获取类的修饰符 private 2 public 1 final 16 abstract 1024

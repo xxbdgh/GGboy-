@@ -1,4 +1,4 @@
-package cn.com.xjh;
+package cn.com.xjh.thread.v0427;
 
 import jdk.jfr.DataAmount;
 import lombok.AllArgsConstructor;

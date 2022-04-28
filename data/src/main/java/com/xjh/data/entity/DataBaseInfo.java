@@ -19,8 +19,18 @@ public class DataBaseInfo {
     private String driverName;
 
     /**
-     *
+     * 用户名
      */
+    private String username;
 
+    /**
+     * 密码
+     */
+    private String password;
+
+    /**
+     * url
+     */
+    private String url;
 
 }
